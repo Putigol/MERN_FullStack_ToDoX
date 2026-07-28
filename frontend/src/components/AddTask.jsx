@@ -1,3 +1,5 @@
+import { Plus } from "lucide-react";
+import { Button } from "./ui/button";
 import { Card } from "./ui/card";
 import { Input } from "./ui/input";
 
@@ -12,6 +14,10 @@ const AddTask = () => {
           sm:flex-1 border-border/50 
           focus:border-primary/50 focus:ring-primary/20"
         />
+        <Button variant="gradient" size="xl" className="px-6">
+          <Plus className="size-5" />
+          Thêm
+        </Button>
       </div>
     </Card>
   );

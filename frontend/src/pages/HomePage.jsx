@@ -31,9 +31,13 @@ const HomePage = () => {
           {/* Danh sách nhiệm vụ */}
           <TaskList />
           {/* Phân trang và Lọc theo date */}
-          <div className="flex flex-col items-center justify-center gap-6 sm:flex-row">
-            <TaskListPagination />
-            <DateTimeFilter />
+          <div className="flex w-full flex-col items-center justify-between gap-4 sm:flex-row">
+            <div className="flex w-full justify-center sm:justify-start">
+              <TaskListPagination />
+            </div>
+            <div className="flex w-full justify-center sm:justify-end">
+              <DateTimeFilter />
+            </div>
           </div>
           {/* Chân trang */}
           <Footer />
